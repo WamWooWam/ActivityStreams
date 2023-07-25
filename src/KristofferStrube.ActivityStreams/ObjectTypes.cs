@@ -1,4 +1,7 @@
-﻿namespace KristofferStrube.ActivityStreams;
+﻿using System.Text.Json.Serialization;
+using KristofferStrube.ActivityStreams.JsonLD;
+
+namespace KristofferStrube.ActivityStreams;
 
 internal static class ObjectTypes
 {

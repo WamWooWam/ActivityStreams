@@ -45,7 +45,7 @@ internal class LinkConverter : JsonConverter<ILink?>
             return;
         }
 
-        if (value.JsonLDContext is null
+        if ((value.JsonLDContext is null || value.JsonLDContext.Count() > 0)
             && value.Id is null
             && value.Name is null
             && value.MediaType is null
